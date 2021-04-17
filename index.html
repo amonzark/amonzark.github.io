@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Amon Zark Gaming</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!--swiper-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<a href="index.html"><img src="foto/logogaming.png" class="logo"></a>
+				<nav>
+					<ul id="menulist">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="">Videos</a></li>
+						<li><a href="">About Me</a></li>
+						<li><a href="">First Menu</a></li>
+					</ul>
+				</nav>
+				<img src="foto/menu.png" class="menu-icon" onclick="toglemenu()">
+			</div>
+
+			<!--home-->
+			<div class="row">
+				<div class="col-1">
+					<h2>Amon<h2><h2 style="color: #A60A27"> Zark</h2><h2><br>Gaming</h2>
+					<h3>Enjoy your life everyday <br> with Me!!</h3>
+				</div>
+
+				<div class="col-2">
+					<!--<img src="foto/apex.png" class="foto">-->
+
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide"><img src="foto/rev_pex.png" class="foto"></div>
+					      <div class="swiper-slide"><img src="foto/surtr_ak.png" class="foto"></div>
+					      <div class="swiper-slide"><img src="foto/klee_gi.png" class="foto"></div>
+					      <div class="swiper-slide"><img src="foto/vh.png" class="foto"></div>
+					    </div>
+    				</div>
+
+
+					<div class="color-box"></div>
+				</div>
+				
+			</div>
+
+			<!--Videos-->
+			<div class="videos">
+				
+				<div class="colu-2">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/hkuonM18_ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<div class="color-box2"></div>
+				</div>
+				
+				<div class="colu-1">
+					<h2>Gacha</h2><h2 style="color: #A60A27">Content</h2>
+					<h3>I play Arknights and show you my luck in gacha process from the video on the left</h3>
+				</div>
+			</div>
+
+			<div class="videos2">
+				<div class="colu-3">
+					<h2>Guide</h2><h2 style="color: #A60A27">Content</h2>
+					<h3>I play Arknights and show you my luck in gacha process from the video on the left</h3>
+				</div>
+
+				<div class="colu-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dZs9Q9IsNQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<div class="color-box3"></div>
+				</div>
+			</div>
+
+			<div class="sosmed">
+				<a href="https://www.youtube.com/channel/UCtXT8g9QOZdit8ALpc0c4uQ"><img src="foto/yt.png"></a>
+				<a href="https://www.linkedin.com/in/dwiyan-ramadhan-4436b3189/"><img src="foto/lk.png"></a>
+				<a href="https://www.facebook.com/Temeikifukato.San/"><img src="foto/fb.png"></a>
+			</div>
+		</div>
+
+		<script>
+
+			//toglemenu
+			function toglemenu(){
+
+				var menulist = document.getElementById("menulist");
+				var x = document.getElementById("menulist");
+				//x.style.display = "none"
+				//menulist.style.maxHeight="0px";
+
+				if (x.style.display == "none") {
+					x.style.display = "block";
+					menulist.style.maxHeight = "130px";
+				} else {
+					x.style.display = "none";
+					menulist.style.maxHeight="0px";
+				}
+			}
+		</script>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script type="text/javascript">
+			//fungsi swipe or slide
+			var swiper = new Swiper('.swiper-container', {
+			    effect: 'coverflow',
+			    grabCursor: true,
+			    centeredSlides: true,
+			    slidesPerView: 'auto',
+			    coverflowEffect: {
+			      rotate: 50,
+			      stretch: 0,
+			      depth: 100,
+			      modifier: 1,
+			      slideShadows: false,
+			    },
+			    pagination: {
+			      el: '.swiper-pagination',
+			    },
+			  });
+		</script>
+	</body>
+</html>
